@@ -1,0 +1,9 @@
+<h1>Chitter</h1>
+
+Peeps:
+
+<ul>
+	<% @peeps.each do |peep| %>
+		<li><a href="<%= peep.post %>"><%= peep.timestamp %></a></li>
+	<% end %>
+</ul>
